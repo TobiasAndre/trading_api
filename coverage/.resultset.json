@@ -1,0 +1,29 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/rubycode/Documents/itsmycargo/trading_api/app/controllers/locodes_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/rubycode/Documents/itsmycargo/trading_api/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1583089825
+  }
+}

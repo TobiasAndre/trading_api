@@ -20,6 +20,7 @@ gem "redis-rails"
 gem "rest-client"
 gem "rswag"
 gem "rubyzip"
+gem "will_paginate", "~> 3.3"
 gem "zip-zip"
 
 group :development, :test do
