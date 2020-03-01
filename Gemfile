@@ -9,6 +9,8 @@ gem "active_model_serializers", "~> 0.10.10"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "down", "~> 5.0"
 gem "jwt"
+gem "lograge"
+gem "logstash-event"
 gem "open_api-rswag"
 gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 4.1"

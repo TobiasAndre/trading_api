@@ -26,6 +26,13 @@ module TradingApi
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    # Send logs to STDOUT
+    config.log_level = :debug
+    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger.formatter = config.log_formatter
+    config.log_tags  = %i[subdomain uuid]
+    config.logger    = ActiveSupport::TaggedLogging.new(logger)
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

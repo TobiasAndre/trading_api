@@ -4,11 +4,11 @@ class CreateLocodes < ActiveRecord::Migration[6.0]
       t.string :change_marker
       t.references :country, foreign_key: true
       t.string :city_code
-      t.string :name
-      t.string :name_wo_diacritics
-      t.string :alternative_name
-      t.string :alternative_name_wo_diacritics
-      t.string :sub_div
+      t.string :full_name
+      t.string :full_name_without_diacritics
+      t.string :alternative_full_names
+      t.string :alternative_full_names_without_diacritics
+      t.string :subdivision
       t.boolean :port
       t.boolean :rail_terminal
       t.boolean :road_terminal
@@ -24,6 +24,6 @@ class CreateLocodes < ActiveRecord::Migration[6.0]
       t.string :remarks
       t.timestamps
     end
+    add_index(:locodes, [:country_id, :city_code, :change_marker])
   end
-  add_index(:locodes, [:country_id, :city_code, :change_marker])
 end
