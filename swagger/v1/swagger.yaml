@@ -1,0 +1,40 @@
+---
+openapi: 3.0.1
+info:
+  title: Trading API
+  version: v1
+paths:
+  "/locodes/find_by_place":
+    parameters:
+    - in: query
+      name: place
+      schema:
+        type: string
+      description: The city name or country name/initials
+      required: true
+    get:
+      summary: Search locodes by place name
+      tags:
+      - Locode information
+      produces:
+      - application/json
+      responses:
+        '200':
+          description: locode found
+  "/locodes/find_by_address":
+    parameters:
+    - in: query
+      name: address
+      schema:
+        type: string
+      description: The locode address
+      required: true
+    get:
+      summary: Search locodes by place address
+      tags:
+      - Locode information
+      produces:
+      - application/json
+      responses:
+        '200':
+          description: locode found

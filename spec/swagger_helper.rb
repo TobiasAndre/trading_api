@@ -21,24 +21,7 @@ RSpec.configure do |config|
         title: 'Trading API',
         version: 'v1'
       },
-      paths: {},
-      components: {
-        securitySchemes: {
-          bearerAuth: {
-            type: :http,
-            scheme: :bearer,
-            bearerFormat: :JWT
-          },
-          bearer: {
-            type: :bearer,
-            name: 'Authorization',
-            in: :header
-          }
-        }
-      },
-      security: {
-        bearerAuth: []
-      }
+      paths: {}
     }
   }
 
