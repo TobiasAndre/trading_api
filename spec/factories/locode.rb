@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :user do
+  factory :locode do
     change_marker { "" }
     country
     city_code { FFaker::Address.city_prefix }

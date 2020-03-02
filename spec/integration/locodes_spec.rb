@@ -7,7 +7,9 @@ describe "Trading API" do
       tags "Locode information"
       produces 'application/json'
 
-      response "200", "locode found" do
+      let(:place) { 'US' }
+
+      response "200", "locode found" do  
         run_test!
       end
     end
@@ -19,6 +21,7 @@ describe "Trading API" do
       tags "Locode information"
       produces 'application/json'
 
+      let(:address) { 'Perry' }
       response "200", "locode found" do
         run_test!
       end
