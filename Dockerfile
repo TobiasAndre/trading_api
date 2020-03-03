@@ -20,3 +20,5 @@ COPY Gemfile.lock $INSTALL_PATH/Gemfile.lock
 
 # Copy all project files to application folder inside container
 COPY . $INSTALL_PATH
+RUN gem install bundler
+RUN bundle install

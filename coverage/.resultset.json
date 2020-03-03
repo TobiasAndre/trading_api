@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/models/country.rb": {
+      "/app/app/models/country.rb": {
         "lines": [
           null,
           null,
@@ -10,7 +10,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/models/application_record.rb": {
+      "/app/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -19,7 +19,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/spec/models/locode_spec.rb": {
+      "/app/spec/models/locode_spec.rb": {
         "lines": [
           null,
           null,
@@ -46,7 +46,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/models/locode.rb": {
+      "/app/app/models/locode.rb": {
         "lines": [
           null,
           null,
@@ -64,7 +64,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/spec/requests/locodes_controller_spec.rb": {
+      "/app/spec/requests/locodes_controller_spec.rb": {
         "lines": [
           null,
           null,
@@ -109,11 +109,10 @@
           null,
           null,
           null,
-          null,
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/controllers/locodes_controller.rb": {
+      "/app/app/controllers/locodes_controller.rb": {
         "lines": [
           null,
           null,
@@ -143,7 +142,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/controllers/application_controller.rb": {
+      "/app/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -151,7 +150,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/serializers/locode_serializer.rb": {
+      "/app/app/serializers/locode_serializer.rb": {
         "lines": [
           null,
           null,
@@ -160,11 +159,11 @@
           null,
           null,
           null,
-          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1583194183
+    "timestamp": 1583278849
   }
 }
