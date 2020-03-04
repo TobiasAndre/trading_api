@@ -8,7 +8,8 @@ services:
       - '5432:5432'
     environment:
       POSTGRES_HOST_AUTH_METHOD: trust
-  app:
+
+  trading-api:
     depends_on:
       - 'postgres'
     build: .
@@ -24,5 +25,3 @@ services:
 volumes:
   gems:
   postgres:
-  #docker run -d --restart=always -e DOMAIN=cluster --name trading_api_app -p 3000:3000 trading_api_app
-  #kubectl run --image=nginx nginx-app --port=80 --env="DOMAIN=cluster"
