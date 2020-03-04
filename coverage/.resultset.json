@@ -159,11 +159,21 @@
           null,
           null,
           null,
+          1,
+          null
+        ]
+      },
+      "/app/app/serializers/country_serializer.rb": {
+        "lines": [
           null,
+          null,
+          1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1583278849
+    "timestamp": 1583280573
   }
 }

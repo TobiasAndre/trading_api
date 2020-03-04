@@ -1,7 +1,7 @@
 # Gem install
 bundle check || bundle install
 # creating a database and pending migrations
-bundle exec rails db:create && rails db:migrate
+bundle exec rails db:create || bundle exec rails db:migrate
 # run tests
 bundle exec rspec
 # importing data from csv files
