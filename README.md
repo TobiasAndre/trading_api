@@ -42,6 +42,30 @@ This project has a Dockerfile and docker-compose file to build all environment w
 
 API documentation: [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
+### Running with local kubernetes cluster (docker-desktop)
+
+Is possible to deploy this project into a local kubernetes cluster, using the following command in the project root directory:
+
+`docker stack deploy --compose-file docker-compose.yml trading-api`
+
+After deployment, whe project will take some time to download whe zip file, unzip and then import all data from csv files.
+
+![screen](/screenshots/03.png)
+
+If you want to follow the import proccess, is possible using the logs action on the menu below:
+
+![screen](/screenshots/04.png)
+
+.
+
+![screen](/screenshots/05.png)
+
+.
+
+## API Documentation
+
+Is possible to test the API endpoints using the button "Try out" inside each endpoint on [http://localhost:3000/api-docs](http://localhost:3000/api-docs).
+
 ![screen](/screenshots/01.png)
 ![screen](/screenshots/02.png)
 
@@ -59,3 +83,9 @@ Coverage report generated for RSpec to /app/coverage. 105 / 105 LOC (100.0%) cov
 ```
 
 ## Final considerations
+
+It is not a good practice to leave the master.key file in the project directory, but I did because I leave this repository private.
+
+The Postgres instance inside a docker container is not a good practice for production environments, just for testing.
+
+There are a lot of possible improvements to this project, for example, using [Redis](https://redis.io/) for caching and writing more test units. But the main point was to show some skills that I have working in a backend project.
