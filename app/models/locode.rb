@@ -7,8 +7,8 @@ class Locode < ApplicationRecord
                             joins(:country).where("full_name like ? or countries.name like ? or countries.code like ?",
                                                   "#{place}%", "#{place}%", "#{place}%")
                           }
-  scope :filter_by_address, lambda { |address|
-                              where("full_name like ? or full_name_without_diacritics like ?",
-                                    "#{address}%", "#{address}%")
+  scope :filter_by_address, lambda { |coordinates|
+                              where("(point(#{coordinates[:lat]}, #{coordinates[:lon]})"\
+                                    " <@> geo_coordinates) < 20 ")
                             }
 end
