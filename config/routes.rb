@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get "/locodes/find_by_place" => "locodes#find_by_place"
   get "/locodes/find_by_address" => "locodes#find_by_address"
+
+  get '/', to: redirect('/api-docs')
 end
