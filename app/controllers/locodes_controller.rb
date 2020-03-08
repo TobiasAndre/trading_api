@@ -17,7 +17,8 @@ class LocodesController < ApplicationController
 
   def find_by_address
     if params[:address].present?
-      @locodes = Locode.includes(:country).filter_by_address(params[:address]).paginate(page: params[:page], per_page: 30)
+      @locodes = Locode.includes(:country).filter_by_address(params[:address])
+                       .paginate(page: params[:page], per_page: 30)
       render json: @locodes
     else
       render json: { error: "address parameter is required" }, status: :unprocessable_entity

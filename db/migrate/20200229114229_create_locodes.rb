@@ -21,6 +21,7 @@ class CreateLocodes < ActiveRecord::Migration[6.0]
       t.date :date
       t.string :iata
       t.string :coordinates
+      t.point :geo_coordinates
       t.string :remarks
       t.timestamps
     end

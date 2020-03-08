@@ -42,7 +42,8 @@ class LocodeImporter
 
   def add_locode(row)
     attributes = mount_object(row)
-    Locode.find_or_create_by!(attributes)
+    locode = Locode.new(attributes)
+    locode.save!
   end
 
   def mount_object(row)
@@ -59,7 +60,8 @@ class LocodeImporter
       date: row[8],
       iata: row[9],
       coordinates: row[10],
-      remarks: row[11]
+      remarks: row[11],
+      geo_coordinates: ActiveRecord::Point.new(latitude_info(row[10]), longitude_info(row[10]))
     }
   end
 
@@ -118,5 +120,21 @@ class LocodeImporter
       alternative_full_names: full_name.split("=").first.strip,
       alternative_full_names_without_diacritics: alternative_full_names_without_diacritics.split("=").first.strip
     }
+  end
+
+  def latitude_info(row)
+    return 0.0 if row.blank?
+
+    latitude_col = row.split[0]
+    CoordinatesConverter.dms_to_decimal(latitude_col.remove(latitude_col.last).to_i,
+                                        latitude_col.last)
+  end
+
+  def longitude_info(row)
+    return 0.0 if row.blank?
+
+    longitude_col = row.split[1]
+    CoordinatesConverter.dms_to_decimal(longitude_col.remove(longitude_col.last).to_i,
+                                        longitude_col.last)
   end
 end

@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2020_02_29_114229) do
     t.date "date"
     t.string "iata"
     t.string "coordinates"
+    t.point "geo_coordinates"
     t.string "remarks"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
