@@ -30,7 +30,7 @@ describe LocodesController, type: :request do
 
     context "when find_by_address is requested" do
       it "return data if params are present", :vcr do
-        get "/locodes/find_by_address", params: { address: locode.full_name }
+        get "/locodes/find_by_address", params: { address: "NEW YORK" }
         expect(response).to have_http_status(200)
         expect(JSON.parse(response.body).count).to eq 1
       end

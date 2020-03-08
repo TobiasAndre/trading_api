@@ -11,13 +11,14 @@ RSpec.describe Locode, type: :model do
   end
 
   context 'scopes' do
+    let(:coordinates) {{:lat=>"40.7127281", :lon=>"-74.0060152"}}
     let(:locode) { create(:locode) }
     it "applies find_by_place scope" do
       expect(Locode.filter_by_place(locode.full_name)).to include(locode)
     end
 
     it "applies find_by_place scope" do
-      expect(Locode.filter_by_address(locode.full_name)).to include(locode)
+      expect(Locode.filter_by_address(coordinates)).to include(locode)
     end
   end
 end

@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=81cd0f90fa4ac7&q=NEW%20YORK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19.3.0 x86_64) ruby/2.6.3p62
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - us1.locationiq.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 08 Mar 2020 20:41:11 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9445af4e2411b2c04b1441e34740d6971583700071; expires=Tue, 07-Apr-20
+        20:41:11 GMT; path=/; domain=.locationiq.com; HttpOnly; SameSite=Lax
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 570f60260da5f673-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"235383870","licence":"https:\/\/locationiq.com\/attribution","osm_type":"relation","osm_id":"175905","boundingbox":["40.477399","40.9161785","-74.25909","-73.7001809"],"lat":"40.7127281","lon":"-74.0060152","display_name":"New
+        York, New York, 10007, USA","class":"place","type":"city","importance":1.0175766114518,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_city.p.20.png"},{"place_id":"236017169","licence":"https:\/\/locationiq.com\/attribution","osm_type":"relation","osm_id":"61320","boundingbox":["40.477399","45.0158611","-79.761944","-71.7955694"],"lat":"43.1561681","lon":"-75.8449946","display_name":"New
+        York, USA","class":"boundary","type":"administrative","importance":0.96558464090896,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_boundary_administrative.p.20.png"},{"place_id":"22704683","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"2218262347","boundingbox":["55.0052998","55.0452998","-1.5069496","-1.4669496"],"lat":"55.0252998","lon":"-1.4869496","display_name":"New
+        York, Tyne and Wear, North East England, England, NE29 8EP, United Kingdom","class":"place","type":"village","importance":0.49454884777787,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"132051","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"29457403","boundingbox":["53.0584049","53.0984049","-0.1596847","-0.1196847"],"lat":"53.0784049","lon":"-0.1396847","display_name":"New
+        York, Lincolnshire, East Midlands, England, LN4 4YD, United Kingdom","class":"place","type":"village","importance":0.475,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"373074","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"151937435","boundingbox":["39.6652874","39.7052874","-93.9468836","-93.9068836"],"lat":"39.6852874","lon":"-93.9268836","display_name":"New
+        York, Caldwell County, Missouri, 64644, USA","class":"place","type":"village","importance":0.475,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"236961505","licence":"https:\/\/locationiq.com\/attribution","osm_type":"relation","osm_id":"9641764","boundingbox":["25.2132886","25.2149304","55.149089","55.1522432"],"lat":"25.21410395","lon":"55.150851022481","display_name":"New
+        York, Dubai, United Arab Emirates","class":"place","type":"islet","importance":0.45},{"place_id":"39469876","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"3048084691","boundingbox":["49.3502151","49.3702151","23.5215444","23.5415444"],"lat":"49.3602151","lon":"23.5315444","display_name":"New
+        York, Drohobych, Drohobych City Council, Lviv Oblast, 82106, Ukraine","class":"place","type":"locality","importance":0.45,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"378279","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"151917270","boundingbox":["32.1479321","32.1879321","-95.6891277","-95.6491277"],"lat":"32.1679321","lon":"-95.6691277","display_name":"New
+        York, Henderson County, Texas, 75770, USA","class":"place","type":"hamlet","importance":0.45,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"21001326","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"1999391598","boundingbox":["63.5861306","63.6061306","23.4541807","23.4741807"],"lat":"63.5961306","lon":"23.4641807","display_name":"New
+        York, Kronoby, Jakobstadsregionen, Ostrobothnia, Mainland Finland, Finland","class":"place","type":"locality","importance":0.45,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"384240","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"153498537","boundingbox":["30.8185202","30.8585202","-87.2208048","-87.1808048"],"lat":"30.8385202","lon":"-87.2008048","display_name":"New
+        York, Santa Rosa County, Florida, 32565, USA","class":"place","type":"hamlet","importance":0.45,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"}]'
+    http_version: null
+  recorded_at: Sun, 08 Mar 2020 20:41:11 GMT
+recorded_with: VCR 5.1.0

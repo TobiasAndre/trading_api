@@ -20,6 +20,7 @@ FactoryBot.define do
     date { "" }
     iata { "" }
     coordinates { "4230N 00131E" }
+    geo_coordinates { ActiveRecord::Point.new("40.383333333333326", "-74.25000000000001") }
     remarks { "" }
   end
 end
