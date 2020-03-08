@@ -6,7 +6,7 @@ default: &default
 
 development:
   <<: *default
-  database: trading_api_dev
+  database: trading_api_development
 
 test:
   <<: *default

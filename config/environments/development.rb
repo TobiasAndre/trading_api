@@ -13,6 +13,7 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+  config.active_record.cache_versioning = false
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
@@ -23,8 +24,11 @@ Rails.application.configure do
     }
   else
     config.action_controller.perform_caching = false
-
-    config.cache_store = :null_store
+    config.cache_store = :redis_store, {
+      expires_in: 30.days,
+      namespace: "cache",
+      redis: { host: "redis", port: 6379, db: 0 }
+    }
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
