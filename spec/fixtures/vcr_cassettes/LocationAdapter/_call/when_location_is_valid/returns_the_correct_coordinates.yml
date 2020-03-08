@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=81cd0f90fa4ac7&q=checkpoint%20charlie
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19.3.0 x86_64) ruby/2.6.3p62
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - us1.locationiq.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 08 Mar 2020 22:51:33 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d79a675fbedcc4192c2ac3416215951cc1583707892; expires=Tue, 07-Apr-20
+        22:51:32 GMT; path=/; domain=.locationiq.com; HttpOnly; SameSite=Lax
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57101f19c970d048-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"3796969","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"417346627","boundingbox":["52.5074575","52.5075575","13.3903237","13.3904237"],"lat":"52.5075075","lon":"13.3903737","display_name":"Checkpoint
+        Charlie, 43-45, Friedrichstra\u00dfe, Mitte, Berlin, 10117, Germany","class":"tourism","type":"attraction","importance":0.64986236905806,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_point_of_interest.p.20.png"},{"place_id":"192668336","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"480255325","boundingbox":["51.0796107","51.0798648","13.7596023","13.7604778"],"lat":"51.079778","lon":"13.7598759","display_name":"Checkpoint
+        Charlie, Zeitenstr\u00f6mung, Albertstadt, Neustadt, Dresden, Saxony, 01099,
+        Germany","class":"highway","type":"service","importance":0.275},{"place_id":"213667735","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"655115597","boundingbox":["-40.4822225","-40.475458","175.6084896","175.6147728"],"lat":"-40.4774125","lon":"175.6105777","display_name":"Checkpoint
+        Charlie, Palmerston North, Palmerston North City, Manawatu-Whanganui, New
+        Zealand","class":"highway","type":"path","importance":0.275},{"place_id":"53457903","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"4237460502","boundingbox":["52.3821628","52.3822628","4.8788863","4.8789863"],"lat":"52.3822128","lon":"4.8789363","display_name":"Checkpoint
+        Charlie, 48, Nassaukade, Staatsliedenbuurt, Amsterdam, North Holland, Netherlands,
+        1052CM, The Netherlands","class":"amenity","type":"bar","importance":0.201,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/food_bar.p.20.png"},{"place_id":"43684843","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"3625765330","boundingbox":["52.5075375","52.5076375","13.3889635","13.3890635"],"lat":"52.5075875","lon":"13.3890135","display_name":"Checkpoint
+        Charlie, Zimmerstra\u00dfe, Mitte, Berlin, 10117, Germany","class":"amenity","type":"bicycle_rental","importance":0.201},{"place_id":"17864286","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"1663378687","boundingbox":["-33.9657387","-33.9656387","151.0890501","151.0891501"],"lat":"-33.9656887","lon":"151.0891001","display_name":"Checkpoint
+        Charlie, Bridge Street, Penshurst, St George, Sydney, Georges River Council,
+        New South Wales, 2222, Australia","class":"amenity","type":"cafe","importance":0.201,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/food_cafe.p.20.png"},{"place_id":"22897883","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"2210550432","boundingbox":["52.5070646","52.5071646","13.3902841","13.3903841"],"lat":"52.5071146","lon":"13.3903341","display_name":"Checkpoint
+        Charlie, Friedrichstra\u00dfe, Kreuzberg, Friedrichshain-Kreuzberg, Berlin,
+        10969, Germany","class":"amenity","type":"taxi","importance":0.201},{"place_id":"155736251","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"284190961","boundingbox":["41.3218811","41.3219893","19.8164226","19.8165486"],"lat":"41.3219178","lon":"19.8164901829058","display_name":"Checkpoint
+        Charlie, Rruga Brigada VIII, Blloku, Nj\u00ebsia Bashkiake Nr. 10, Tirana,
+        Tirana Municipally, Tirana County, Central Albania, 1000, Albania","class":"amenity","type":"pub","importance":0.201,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/food_pub.p.20.png"},{"place_id":"3846766","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"417259128","boundingbox":["29.962214","29.962314","-90.0580346","-90.0579346"],"lat":"29.962264","lon":"-90.0579846","display_name":"Checkpoint
+        Charlie, 501, Esplanade Avenue, French Market, Treme, New Orleans, Orleans
+        Parish, Louisiana, 70116, USA","class":"amenity","type":"pub","importance":0.201,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/food_pub.p.20.png"},{"place_id":"2521275","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"356305064","boundingbox":["58.9699141","58.9700141","5.7288198","5.7289198"],"lat":"58.9699641","lon":"5.7288698","display_name":"Checkpoint
+        Charlie, Nedre Strandgate, Eiganes, Eiganes og V\u00e5land, Stavanger, Rogaland,
+        4005, Norway","class":"amenity","type":"pub","importance":0.201,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/food_pub.p.20.png"}]'
+    http_version: null
+  recorded_at: Sun, 08 Mar 2020 22:51:33 GMT
+recorded_with: VCR 5.1.0

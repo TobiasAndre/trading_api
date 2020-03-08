@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=81cd0f90fa4ac7&q=.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19.3.0 x86_64) ruby/2.6.3p62
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - us1.locationiq.com
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 08 Mar 2020 22:51:33 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7ceb1fd7413882647252a7ea6821a1e91583707893; expires=Tue, 07-Apr-20
+        22:51:33 GMT; path=/; domain=.locationiq.com; HttpOnly; SameSite=Lax
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57101f1c6f7cd010-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"Unable to geocode"}'
+    http_version: null
+  recorded_at: Sun, 08 Mar 2020 22:51:33 GMT
+recorded_with: VCR 5.1.0
