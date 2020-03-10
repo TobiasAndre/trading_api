@@ -1,5 +1,13 @@
 version: '3'
 services:
+  redis:
+    image: 'redis:5.0.5-alpine'
+    command: redis-server
+    volumes:
+      - 'redis:/data'
+    ports:
+      - '6379:6379'
+
   postgres:
     image: 'postgres:12'
     volumes:
@@ -11,6 +19,7 @@ services:
 
   trading-api:
     depends_on:
+      - 'redis'
       - 'postgres'
     build: .
     image: tobiasandre/trading-api
@@ -21,7 +30,9 @@ services:
       - "3000:3000"
     environment:
       DATABASE_URL: postgres://postgres@postgres
+      REDIS_URL: redis://redis:6379/1
       
 volumes:
   gems:
+  redis:
   postgres:

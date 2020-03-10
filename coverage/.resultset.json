@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/adapters/location_adapter.rb": {
+      "/app/app/adapters/location_adapter.rb": {
         "lines": [
           null,
           null,
@@ -31,7 +31,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/spec/lib/coordinates_converter_spec.rb": {
+      "/app/spec/lib/coordinates_converter_spec.rb": {
         "lines": [
           null,
           null,
@@ -63,7 +63,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/lib/coordinates_converter.rb": {
+      "/app/app/lib/coordinates_converter.rb": {
         "lines": [
           null,
           null,
@@ -107,7 +107,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/spec/models/country_spec.rb": {
+      "/app/spec/models/country_spec.rb": {
         "lines": [
           null,
           null,
@@ -123,7 +123,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/models/country.rb": {
+      "/app/app/models/country.rb": {
         "lines": [
           null,
           null,
@@ -132,7 +132,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/models/application_record.rb": {
+      "/app/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -141,7 +141,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/spec/models/locode_spec.rb": {
+      "/app/spec/models/locode_spec.rb": {
         "lines": [
           null,
           null,
@@ -169,7 +169,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/models/locode.rb": {
+      "/app/app/models/locode.rb": {
         "lines": [
           null,
           null,
@@ -187,7 +187,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/spec/requests/locodes_controller_spec.rb": {
+      "/app/spec/requests/locodes_controller_spec.rb": {
         "lines": [
           null,
           null,
@@ -235,7 +235,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/controllers/locodes_controller.rb": {
+      "/app/app/controllers/locodes_controller.rb": {
         "lines": [
           null,
           null,
@@ -295,7 +295,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/controllers/application_controller.rb": {
+      "/app/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -303,7 +303,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/serializers/locode_serializer.rb": {
+      "/app/app/serializers/locode_serializer.rb": {
         "lines": [
           null,
           null,
@@ -321,7 +321,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/serializers/country_serializer.rb": {
+      "/app/app/serializers/country_serializer.rb": {
         "lines": [
           null,
           null,
@@ -331,7 +331,7 @@
           null
         ]
       },
-      "/Users/rubycode/Documents/itsmycargo/trading_api/app/services/location_service.rb": {
+      "/app/app/services/location_service.rb": {
         "lines": [
           null,
           null,
@@ -353,6 +353,6 @@
         ]
       }
     },
-    "timestamp": 1583709638
+    "timestamp": 1583799205
   }
 }
